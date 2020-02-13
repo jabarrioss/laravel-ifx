@@ -13,12 +13,18 @@ Add `poyii/laravel-ifx` as a requirement to composer.json:
 
 ```json
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url" : "https://github.com/gjae/laravel-ifx.git"
+        }
+    ],
     "require": {
-        "poyii/laravel-ifx": "1.0.0"
+        "poyii/laravel-ifx": "1.1.3"
     }
 }
 ```
-And then run `composer update`
+And then run `composer update gjae/laravel-fix --prefer-source`
 
 Once Composer has installed or updated your packages you need to register Informix DB. Open up `config/app.php` and find
 the `providers` key and add:
