@@ -9,7 +9,7 @@ Laravel-ifx is an Informix Database Driver package for [Laravel Framework](http:
 
 ### Installation
 
-Add `poyii/laravel-ifx` as a requirement to composer.json:
+Add `gjae/laravel-ifx` as a requirement to composer.json:
 
 ```json
 {
@@ -24,7 +24,7 @@ Add `poyii/laravel-ifx` as a requirement to composer.json:
     }
 }
 ```
-And then run `composer update gjae/laravel-fix --prefer-source`
+And then run `composer require gjae/laravel-fix:dev-master`
 
 Once Composer has installed or updated your packages you need to register Informix DB. Open up `config/app.php` and find
 the `providers` key and add:
@@ -39,6 +39,8 @@ Finally you need to publish a configuration file by running the following Artisa
 $ php artisan vendor:publish
 ```
 This will copy the configuration file to config/informix.php
+
+> Note: this repository is a forked of [llaiajiale/laravel-ifx](https://github.com/llaiajiale/laravel-ifx)
 
 
 ### License
