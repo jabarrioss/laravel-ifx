@@ -9,19 +9,19 @@ Laravel-ifx is an Informix Database Driver package for [Laravel Framework](http:
 
 ### Installation
 
-Add `gjae/laravel-ifx` as a requirement to composer.json:
+Add `jabarrioss/laravel-ifx` as a requirement to composer.json:
 
 ```json
 {
     "repositories": [
         {
             "type": "vcs",
-            "url" : "https://github.com/gjae/laravel-ifx.git"
+            "url" : "https://github.com/jabarrioss/laravel-ifx.git"
         }
     ]
 }
 ```
-And then run `composer require gjae/laravel-fix:dev-master`
+And then run `composer require jabarrioss/laravel-fix:dev-master`
 
 Finally you need to publish a configuration file by running the following Artisan command.
 
