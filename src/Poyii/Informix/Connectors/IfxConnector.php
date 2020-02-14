@@ -47,7 +47,7 @@ class IfxConnector extends Connector implements ConnectorInterface
         }
 
         try {
-            $pdo = new \PDO($dsn, $username, $password, $options);
+            $pdo = new \PDO(env('DB_ODBC_DSN'));
         } catch (Exception $e) {
             $pdo = $this->tryAgainIfCausedByLostConnection(
                 $e, $dsn, $username, $password, $options
