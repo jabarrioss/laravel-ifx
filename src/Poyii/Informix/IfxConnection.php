@@ -81,7 +81,6 @@ class IfxConnection extends Connection
 
     protected function convertCharset($in_encoding, $out_encoding, $value){
 
-        //IGNORE
 //        $encoding = mb_detect_encoding($value, mb_detect_order(), false);
 //
 //        if($encoding == $out_encoding)
