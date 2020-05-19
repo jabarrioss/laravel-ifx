@@ -87,13 +87,14 @@ class IfxConnection extends Connection
 //        {
 //            return $value;
 //        }
-//        \Log::debug("encoding: ".$in_encoding." value ".$value);
+//        
         //return mb_convert_encoding(trim($value), $out_encoding);
         if ($out_encoding == "UTF-8") {
-            return iconv($in_encoding, "{$out_encoding}//IGNORE", trim(utf8_encode($value)));
-        }
+			return trim(utf8_encode($value));	
+		}
         return iconv($in_encoding, "{$out_encoding}//IGNORE", trim($value));
-    }
+			
+	}
 
     public function select($query, $bindings = [], $useReadPdo = true)
     {
